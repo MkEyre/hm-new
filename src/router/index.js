@@ -7,10 +7,12 @@ import User from '../views/User.vue'
 import Edit from '../views/Edit.vue'
 import MyFollow from '../views/MyFollow.vue'
 import MyComment from '../views/MyComment.vue'
+import MyStar from '../views/MyStar.vue'
+import Home from '../views/Home.vue'
 
 const router = new VueRouter({
   routes: [
-    { path: '/', redirect: '/login' },
+    { path: '/', redirect: '/home' },
     {
       path: '/login',
       name: '/login',
@@ -38,6 +40,14 @@ const router = new VueRouter({
     {
       path: '/my-comment',
       component: MyComment,
+    },
+    {
+      path: '/my-star',
+      component: MyStar,
+    },
+    {
+      path: '/home',
+      component: Home,
     },
   ],
 })

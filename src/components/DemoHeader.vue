@@ -21,6 +21,7 @@ export default {};
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
     background-color: #f4f4f4;
     height: 40px;
     display: flex;

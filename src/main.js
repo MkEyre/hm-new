@@ -9,6 +9,8 @@ import router from './router/index'
 import DemoHeader from './components/DemoHeader.vue'
 import DemoLogo from './components/DemoLogo.vue'
 import DemoButton from './components/DemoButton.vue'
+import DemoPost from './components/DemoPost.vue'
+
 import {
   Field,
   Toast,
@@ -58,6 +60,7 @@ Vue.config.productionTip = false
 Vue.component('demo-header', DemoHeader)
 Vue.component('demo-logo', DemoLogo)
 Vue.component('demo-button', DemoButton)
+Vue.component('demo-post', DemoPost)
 
 Vue.filter('time', (val, str) => {
   return moment(val).format(str)
